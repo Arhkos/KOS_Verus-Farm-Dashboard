@@ -60,20 +60,21 @@ Follow these steps to install the project on your local machine:
 
 ### 1. Clone the project
 
-### 2. Install Dependencies
+### 2. Install Python : https://www.python.org/downloads/windows/ or linux version
+
+### 3. Install Dependencies
 
 The script requires **Flask** (web server) and **Requests** (API polling). Install them directly using `pip`:
 
 ```powershell
 python pip install flask
 ```
+
 To check if installed : 
+
 ```powershell
 pip install list
 ```
-### 3. Using requirements.txt (Optional)
-
-Alternatively, you can use the standard dependency file:
 
 ---
 
