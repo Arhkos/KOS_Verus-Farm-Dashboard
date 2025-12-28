@@ -15,7 +15,7 @@ This dashboard was developed to provide a **single source of truth**, merging ra
 
 Here is a look at the monitoring console in action, showing the miner grid and global statistics on a single line.
 
-![image] (https://github.com/Arhkos/KOS_Verus-Farm-Dashboard/blob/main/static/Logo.png "screenshot")
+![image](https://raw.githubusercontent.com/Arhkos/KOS_Verus-Farm-Dashboard/refs/heads/main/static/Logo.png "screenshot")
 
 ---
 
