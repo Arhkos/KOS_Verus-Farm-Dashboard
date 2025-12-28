@@ -133,16 +133,18 @@ Open your web browser and navigate to:
 
 ---
 
-## 📂 Project Structure
+#### 📂 Project Structure
 
 - **`miner_web_dashboard.py`**: Main Python script (Network scanner + Flask server).
 
 - **`MINER_NAMES.csv`**: Local database (IPs and Names).
 
+- **`static/`**: Folder containing the **favicon.ico** and other static assets.
+
 - **`requirements.txt`**: List of required Python libraries.
 
 - **`docs/`**: Folder for documentation assets (screenshots).
 
-- **`.gitignore`**: Prevents personal files (like your CSV) from being uploaded to GitHub.
+- **`.gitignore`**: Prevents personal files from being uploaded to GitHub.
 
 - **`README.md`**: This documentation file.
