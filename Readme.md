@@ -60,11 +60,13 @@ Follow these steps to install the project on your local machine:
 
 ### 1. Clone the project
 
-### 2. Install Python : https://www.python.org/downloads/windows/ or linux version
+### 2. Install Python
+
+Download and install https://www.python.org/downloads/windows/ or linux version
 
 ### 3. Install Dependencies
 
-The script requires **Flask** (web server) and **Requests** (API polling). Install them directly using `pip`:
+The script requires **Flask** (web server) and **Requests** (API polling). Install them directly using `pip` with powershell console:
 
 ```powershell
 python pip install flask
@@ -94,7 +96,7 @@ Create a file named **`MINER_NAMES.csv`** in the root directory. This file maps 
 
 Open `miner_web_dashboard.py` and modify the following variables in the `--- CONFIGURATION ---` section:
 
-- **`NETWORK_MASK`**: Define your network range (e.g., `172.16.0.0/23`).
+- **`NETWORK_MASK`**: Define your network range (e.g., `192.168.1.0/24`).
 
 - **`POOL_API_URL`**: Paste your Vipor Wallet REST API URL.
 
@@ -132,7 +134,13 @@ A minor anomaly is detected. This usually means one or more CPU cores are inacti
 
 ### 1. Start the Server
 
-Run the main script from your terminal:
+Run the main script from your terminal in powershell :
+
+```powershell
+python .\miner_web_dashboard_V2.py
+```
+
+You can also create a start_server.ps1 with these commands and run it with powershell.
 
 ### 2. Access the Interface
 
@@ -152,10 +160,8 @@ Open your web browser and navigate to:
 
 - **`static/`**: Folder containing the **favicon.ico** and other static assets.
 
-- **`requirements.txt`**: List of required Python libraries.
-
 - **`docs/`**: Folder for documentation assets (screenshots).
 
-- **`.gitignore`**: Prevents personal files from being uploaded to GitHub.
-
 - **`README.md`**: This documentation file.
+
+- **`README_FRENCH.md`**: This same documentation file but in baguette du fromage.
