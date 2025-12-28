@@ -1,3 +1,5 @@
+![image](https://raw.githubusercontent.com/Arhkos/KOS_Verus-Farm-Dashboard/refs/heads/main/static/Logo.png "Logo")
+
 # 📱 KOS Verus Farm Dashboard
 
 Un tableau de bord de monitoring temps réel haute performance, conçu pour la gestion centralisée et le diagnostic avancé des fermes de minage mobiles Verus (VRSC).
@@ -5,6 +7,8 @@ Un tableau de bord de monitoring temps réel haute performance, conçu pour la g
 ## 🖼️ Aperçu de l'interface
 
 Voici un aperçu de la console de monitoring en action, affichant la grille des mineurs et les statistiques globales sur une seule ligne.
+
+![image](https://raw.githubusercontent.com/Arhkos/KOS_Verus-Farm-Dashboard/refs/heads/main/docs/Screenshot.png "screenshot")
 
 ## ✨ Fonctionnalités Clés
 
@@ -36,9 +40,32 @@ Avant d'installer et de lancer le dashboard, assurez-vous de disposer des élém
 
 - **Bibliothèques Python** : L'installation nécessite les modules `flask` et `requests`.
 
-Parfait, passons au **Chapitre 6 : Configuration**. C'est la partie la plus importante pour que le script fonctionne correctement chez l'utilisateur final.
+---
 
-Voici le contenu à copier :
+## 🛠️ Installation
+
+Voici les étapes d'instalation :
+
+### 1. Clone the project
+
+### 2. Install Python
+
+Téléchargez ou installez https://www.python.org/downloads/windows/ ou avec un apt-get sur linux
+
+### 3. Install Dependencies
+
+Le script nécessite **Flask** (web server) et **Requests** (API polling). Installez les avec `pip` en console powershell :
+
+```powershell
+python pip install flask
+```
+
+Pour vérifier si bien installé : 
+
+```powershell
+pip install list
+```
+
 
 ---
 
@@ -54,13 +81,15 @@ Créez un fichier nommé **`MINER_NAMES.csv`** à la racine du projet. Ce fichie
 
 > **Attention** : Utilisez impérativement le point-virgule (`;`) comme séparateur.
 
+Vous pouvez utilisez le mien comme exemple. 
+
 ### 2. Variables du script
 
 Ouvrez le fichier `miner_web_dashboard.py` avec un éditeur de texte et modifiez les variables suivantes dans la section `--- CONFIGURATION ---` :
 
-- **`NETWORK_MASK`** : Définissez votre plage réseau. Le script gère les masques larges comme le `/23` (ex: `172.16.0.0/23`).
+- **`NETWORK_MASK`** : Définissez votre plage réseau. Le script gère les masques larges comme le `/23` (par défaut : `192.168.1.0/24`).
 
-- **`POOL_API_URL`** : Collez l'adresse API de votre adresse de portefeuille (Vipor REST API).
+- **`POOL_API_URL`** : Collez l'adresse de votre adresse de portefeuille à la fin de l'URl de l'API (Vipor REST API). Il s'agit de https://restapi.vipor.net/api/pools/verus/miners/YOUR_ADDRESS_HERE
 
 - **`DIFF_THRESHOLD`** : Seuil de tolérance (ex: `0.3`). Augmentez cette valeur (ex: `0.5`) si vous voulez être moins sensible aux alertes de différence de Hashrate (Violet).
 
@@ -100,6 +129,12 @@ Une fois la configuration terminée, vous pouvez démarrer votre tableau de bord
 
 Lancez le script principal depuis votre terminal ou invite de commande :
 
+```powershell
+python .\miner_web_dashboard_V2.py
+```
+
+Vous pouvez aussi créer un fichier server.ps1 avec le code au dessus et le lancer avec un clic droit : executer avec PowerShell.
+
 ### 2. Accéder à l'interface
 
 Ouvrez votre navigateur web (Chrome, Firefox ou Edge recommandés) et rendez-vous à l'adresse suivante :
@@ -112,9 +147,6 @@ Ouvrez votre navigateur web (Chrome, Firefox ou Edge recommandés) et rendez-vou
 
 Le tableau de bord est conçu pour fonctionner en continu. Il met à jour les données automatiquement. Vous pouvez laisser l'onglet ouvert sur un écran de contrôle, les filtres que vous avez sélectionnés resteront actifs grâce à la persistance d'état.
 
-Pour conclure ce document, voici le **Chapitre 9 : Structure du projet**. Il permet aux utilisateurs de comprendre l'organisation des fichiers et de savoir où intervenir s'ils veulent personnaliser l'outil.
-
-Voici le contenu à copier :
 
 ---
 
@@ -130,6 +162,6 @@ Voici l'organisation des fichiers du dépôt :
 
 - **`docs/`** : Dossier contenant les ressources de la documentation, notamment les captures d'écran de l'interface.
 
-- **`.gitignore`** : Fichier de configuration pour éviter d'envoyer vos fichiers personnels (comme votre CSV de mineurs) sur un dépôt public GitHub.
+- **`README.md`** : Le document d'explication en Anglais.
 
-- **`README.md`** : Ce document d'explication.
+- **`README_FRENCH.md`**: baguette baguette
