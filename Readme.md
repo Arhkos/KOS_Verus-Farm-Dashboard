@@ -92,13 +92,15 @@ Create a file named **`MINER_NAMES.csv`** in the root directory. This file maps 
 
 > **Important**: Use the semicolon (`;`) as the separator.
 
+You can use mine for example.
+
 ### 2. Script Variables
 
 Open `miner_web_dashboard.py` and modify the following variables in the `--- CONFIGURATION ---` section:
 
 - **`NETWORK_MASK`**: Define your network range (e.g., `192.168.1.0/24`).
 
-- **`POOL_API_URL`**: Paste your Vipor Wallet REST API URL.
+- **`POOL_API_URL`**: Paste your Vipor Wallet at the end of REST API URL.
 
 - **`DIFF_THRESHOLD`**: Tolerance threshold (e.g., `0.3`). Increase this (e.g., `0.5`) to be less sensitive to hashrate difference alerts (Purple).
 
@@ -159,6 +161,8 @@ Open your web browser and navigate to:
 - **`MINER_NAMES.csv`**: Local database (IPs and Names).
 
 - **`static/`**: Folder containing the **favicon.ico** and other static assets.
+
+- **`requirements.txt`** : Library needed
 
 - **`docs/`**: Folder for documentation assets (screenshots).
 
