@@ -1,5 +1,5 @@
 ---
-# 📱 Verus Farm Dashboard OK-3.0
+# 📱 Verus Farm Dashboard 
 
 A high-performance, real-time monitoring dashboard designed for centralized management and advanced diagnostics of large-scale Verus (VRSC) mobile mining farms.
 
