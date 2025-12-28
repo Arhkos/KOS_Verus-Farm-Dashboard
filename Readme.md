@@ -1,7 +1,10 @@
----
-# 📱 Verus Farm Dashboard 
+![image](https://raw.githubusercontent.com/Arhkos/KOS_Verus-Farm-Dashboard/refs/heads/main/static/Logo.png "Logo")
+
+## 📱 Verus Farm Dashboard
 
 A high-performance, real-time monitoring dashboard designed for centralized management and advanced diagnostics of large-scale Verus (VRSC) mobile mining farms.
+
+---
 
 ### 🚩 Why this project?
 
@@ -15,7 +18,7 @@ This dashboard was developed to provide a **single source of truth**, merging ra
 
 Here is a look at the monitoring console in action, showing the miner grid and global statistics on a single line.
 
-![image](https://raw.githubusercontent.com/Arhkos/KOS_Verus-Farm-Dashboard/refs/heads/main/static/Logo.png "screenshot")
+![image](https://raw.githubusercontent.com/Arhkos/KOS_Verus-Farm-Dashboard/refs/heads/main/docs/Screenshot.png "screenshot")
 
 ---
 
